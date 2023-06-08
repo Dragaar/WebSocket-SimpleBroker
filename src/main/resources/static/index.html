@@ -1,0 +1,28 @@
+<http>
+    <head>
+        <title> Stock Ticker</title>
+        <script src="/webjars/jquery/jquery.min.js"></script>
+        <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+        <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+        <script src="/app.js"></script>
+    </head>
+
+    <body>
+    <h1><b>Stock Ticker</b></h1>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>Code</th>
+            <th>Price</th>
+            <th>Time</th>
+        </tr>
+        </thead>
+        <tbody id="price"></tbody>
+     </table>
+        <p class="addStock">
+            Code: <input class="code"/><br/>
+            Price: <input class="price"/><br/>
+            <button class="addStockButton">Add Stock</button>
+        </p>
+    </body>
+</http>
